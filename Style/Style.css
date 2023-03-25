@@ -8,9 +8,13 @@
 	padding: 15px 0 0 20px;
 	text-decoration: none;
 }
-	#logo-header:hover {
-		color: #0b76a6;
+	#logo-header:visited {
+		color: #ffffff;
 	}
+
+a:visited{
+	color: white;
+}
 	
 	#logo-header .site-name {
 		display: block;
@@ -49,7 +53,7 @@ nav {
 			}
 			
 				nav ul li a:hover {
-					background: #0b76a6;
+					background: #ffffff;
 				}
                 #main-content {
                     background: white;
@@ -73,3 +77,43 @@ nav {
                         top: 0; /* Posicionamos la cabecera pegada arriba */
                         position: fixed; /* Hacemos que la cabecera tenga una posición fija */
                     }
+
+
+/*Web*/
+
+html{
+	font-family: Arial;
+	
+}
+
+.scale:hover{
+	transform:scale(1.1);
+}
+
+.scale {
+	
+	transition: all 0.3s ease-in-out;
+}
+
+.Title{
+
+	font-size:50px;
+	animation: fadein 0.3s; 
+}
+
+@keyframes fadein {
+    0% {
+        opacity:0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+#NB{
+	color: black;
+	text-decoration: none;
+}
