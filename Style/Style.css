@@ -13,7 +13,10 @@
 	}
 
 a:visited{
-	color: white;
+	color: rgb(0, 0, 0);
+}
+a{
+	color: rgb(0, 0, 0);
 }
 	
 	#logo-header .site-name {
@@ -26,7 +29,7 @@ a:visited{
 		display: block;
 		font-weight: 300;
 		font-size: 0.8em;
-		color: #999;
+		color: #444444;
 	}
 /*
  * Navegación
@@ -68,7 +71,7 @@ nav {
                         padding: 40px;
                     }
                     #main-header {
-                        background: #333;
+                        background: #0026ff;
                         color: white;
                         height: 80px;
                         
@@ -83,7 +86,8 @@ nav {
 
 html{
 	font-family: Arial;
-	
+	background: rgb(86,212,209);
+	background: linear-gradient(0deg, rgba(86,212,209,1) 0%, rgba(249,18,51,1) 23%, rgba(255,166,149,1) 75%, rgba(86,212,209,1) 92%);
 }
 
 .scale:hover{
@@ -98,14 +102,39 @@ html{
 .Title{
 
 	font-size:50px;
-	animation: fadein 0.3s; 
+	animation: fadein 0.8s; 
+}
+.Logo{
+	animation: NameAnim 0.3s; 
+}
+.Gaming{
+	font-size:60px;
+	animation: fadein 1.8s; 
 }
 
 @keyframes fadein {
     0% {
         opacity:0;
     }
-    50%{
+	90% {
+        opacity:0;
+    }
+    96%{
+        opacity:0.5;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@keyframes NameAnim {
+    0% {
+        opacity:0;
+    }
+	80% {
+        opacity:0;
+    }
+    90%{
         opacity:0.5;
     }
     100% {
@@ -117,3 +146,30 @@ html{
 	color: black;
 	text-decoration: none;
 }
+
+
+.cuadrado {
+	width: 150px;           /* Ancho de 150 píxeles */
+	height: 150px;          /* Alto de 150 píxeles */
+	background: white;        /* Fondo de color rojo */
+	border: 1px solid #000; /* Borde color negro y de 1 píxel de grosor */
+
+	position: absolute;
+	top: 0;
+	left: 20%;
+
+	z-index: -1;
+
+    color: white;
+    width: 60%;
+                        
+    height: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+    
+    
+    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+	
+  }
+
+  .text{
+	left: 60%;
+  }
